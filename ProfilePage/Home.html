@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<header>
+    <h1>
+        Tharaa Abu Saleh
+    </h1>
+    <div>
+        <!-- Button menu -->
+        <button onclick="toggleMenu()">Contact Information</button>
+        <nav class="menu hidden-menu">
+            <ul>
+                <li>
+                    <i class="material-icons">location_on</i>
+                    <h3>Location: Haifa, Israel</h3>
+                </li>
+                <li>
+                    <i class="material-icons">call</i>
+                    <a href="tel:050-2439932">CLICK TO CALL</a>
+                </li>
+                <li>
+                    <i class="material-icons">mail</i>
+                    <a href ="Tharaa: tharaaa51@gmail.com">Send Email</a>
+                </li>
+                <li>
+                    <i class="material-icons">insert_link</i>
+                    <a href="https://www.linkedin.com/in/thara-abusaleh-8b968b165/">Linkedin Profile</a>
+                </li>
+                <li> 
+                    <i class="material-icons">filter_drama</i>
+                    <a href="https://github.com/tharaas">GitHub Profile</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<body>
+    <h2>Here to unlock new opportunities :) </h2>
+    <img src="welcome.jpeg" alt="Random Name" style="width:30%">
+    <p> 
+        I'm a passionate chess enthusiast,<br>
+        using the game to continually refine my logical thinking abilities.<br>
+        I have a natural curiosity and an eagerness to learn,<br>
+        demonstrated by my ability to master advanced crocheting techniques within a week.<br>
+        I thrive in dynamic environments, where my adaptability and<br>
+        knack for innovative problem-solving shine.<br>
+        Let's connect & crochet success together!<br>
+    </p>
+
+</body>
+<footer>
+    &copy; 2024 Tharaa Abu Saleh Profile Page
+</footer>
+
+<script>
+    function toggleMenu() {
+    var menu = document.querySelector('.menu');
+    if (menu.classList.contains('hidden-menu')) {
+        menu.classList.remove('hidden-menu');
+    } else {
+        menu.classList.add('hidden-menu');
+    }
+}
+</script>
+
+</html>
