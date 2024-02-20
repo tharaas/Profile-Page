@@ -9,6 +9,7 @@
     <h1>
         Tharaa Abu Saleh
     </h1>
+    <img class="profile_img" src="img_avatar.png" alt="Avatar">
     <div>
         <!-- Button menu -->
         <button onclick="toggleMenu()">Contact Information</button>
@@ -40,7 +41,7 @@
 </header>
 <body>
     <h2>Here to unlock new opportunities :) </h2>
-    <img src="welcome.jpeg" alt="Random Name" style="width:30%">
+    <img class="welcome" src="/img/welcome.jpeg" alt="Random Name" style="width:30%">
     <p> 
         I'm a passionate chess enthusiast,<br>
         using the game to continually refine my logical thinking abilities.<br>
@@ -51,20 +52,86 @@
         Let's connect & crochet success together!<br>
     </p>
 
+    <h2>Projects</h2>
+    <div>
+        <p>
+            <h4>Chess game</h4> 
+            Web app using HTML, CSS, JavaScript
+            <li>Implemented the front-end and back-end</li> 
+            <li>Designed and implemented the user flow end-to-end</li>
+            <li>The chess game logic with JavaScript using Minimax algorithm</li>
+            <a href="https://github.com/tharaas/Chass-Game">GitHub</a>
+            <br>
+            <iframe width="420" height="315" src="https://www.youtube.com/watch?v=RBB8qv86wVE"> </iframe>
+            <br><br><br>
+
+            <div class="slider">
+                <a
+                class="twitter-share-button"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-size="large"
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7137029588160831488/"
+                >
+                Bootcamp with AppsFlyer in collaboration with QueenB
+                </a>
+                <ul class="slides">
+                  <li>
+                    <img class="bootcamp" src="img/bootcamp2.jpeg"> 
+                  </li>
+                  <li>
+                    <img class="bootcamp" src="img/bootcamp1.jpeg">
+                  </li>
+                  
+                </ul>
+              </div>
+        </p>
+    </div>
+    <div>
+        <h2>Skills</h2>
+        <span class="tag-cloud">Python</span>
+        <span class="tag-cloud">JavaScript</span>
+        <span class="tag-cloud">HTML</span>
+        <span class="tag-cloud">CSS</span>
+        <span class="tag-cloud">REACT</span>
+        <span class="tag-cloud">Java</span>
+        <span class="tag-cloud">C / C++</span>
+        <span class="tag-cloud">Assembly</span>
+        <span class="tag-cloud">Android</span>
+        <span class="tag-cloud">Matlab</span>
+        <span class="tag-cloud">OOP</span>
+        <span class="tag-cloud">Data structure</span>
+    </div>
+    <div>
+        <h2>Language</h2>
+        <span class="tag-cloud">Arabic</span>
+        <span class="tag-cloud">Hebrew</span>
+        <span class="tag-cloud">English</span>
+    </div>
+
+    <br><br><br><br>
 </body>
-<footer>
+<footer> 
     &copy; 2024 Tharaa Abu Saleh Profile Page
 </footer>
 
 <script>
     function toggleMenu() {
-    var menu = document.querySelector('.menu');
-    if (menu.classList.contains('hidden-menu')) {
-        menu.classList.remove('hidden-menu');
-    } else {
-        menu.classList.add('hidden-menu');
+        var menu = document.querySelector('.menu');
+        if (menu.classList.contains('hidden-menu')) {
+            menu.classList.remove('hidden-menu');
+        } else {
+            menu.classList.add('hidden-menu');
+        }
     }
-}
-</script>
 
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems, options);
+    });
+
+    $(document).ready(function(){
+        $('.slider').slider();
+    });
+</script>
 </html>
