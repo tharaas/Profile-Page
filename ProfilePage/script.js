@@ -1,7 +1,17 @@
-var nav = document.getElementById('access_nav'),
-    body = document.body;
+function toggleMenu() {
+    var menu = document.querySelector('.menu');
+    if (menu.classList.contains('hidden-menu')) {
+        menu.classList.remove('hidden-menu');
+    } else {
+        menu.classList.add('hidden-menu');
+    }
+}
 
-nav.addEventListener('click', function(e) {
-    body.className = body.className? '' : 'with_nav';
-    e.preventDefault();
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems, options);
+});
+
+$(document).ready(function(){
+    $('.slider').slider();
 });

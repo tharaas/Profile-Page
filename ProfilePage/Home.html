@@ -9,10 +9,9 @@
     <h1>
         Tharaa Abu Saleh
     </h1>
-    <img class="profile_img" src="img_avatar.png" alt="Avatar">
+    <img class="profile_img" src="profileimg.png" alt="Profile" style="width:150px">
     <div>
-        <!-- Button menu -->
-        <button onclick="toggleMenu()">Contact Information</button>
+        <button onclick="toggleMenu()" class="info">Contact Information</button>
         <nav class="menu hidden-menu">
             <ul>
                 <li>
@@ -41,7 +40,6 @@
 </header>
 <body>
     <h2>Here to unlock new opportunities :) </h2>
-    <img class="welcome" src="/img/welcome.jpeg" alt="Random Name" style="width:30%">
     <p> 
         I'm a passionate chess enthusiast,<br>
         using the game to continually refine my logical thinking abilities.<br>
@@ -61,9 +59,9 @@
             <li>Designed and implemented the user flow end-to-end</li>
             <li>The chess game logic with JavaScript using Minimax algorithm</li>
             <a href="https://github.com/tharaas/Chass-Game">GitHub</a>
-            <br>
+            <br>&nbsp<br>
             <iframe width="420" height="315" src="https://www.youtube.com/watch?v=RBB8qv86wVE"> </iframe>
-            <br><br><br>
+            <br>&nbsp<br>
 
             <div class="slider">
                 <a
@@ -75,16 +73,53 @@
                 >
                 Bootcamp with AppsFlyer in collaboration with QueenB
                 </a>
-                <ul class="slides">
-                  <li>
-                    <img class="bootcamp" src="img/bootcamp2.jpeg"> 
-                  </li>
-                  <li>
-                    <img class="bootcamp" src="img/bootcamp1.jpeg">
-                  </li>
-                  
-                </ul>
-              </div>
+                <h4>flip the picture</h4>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="bootcamp2.jpeg" alt="Paris" style="width:350px;height:230px">
+                        </div>
+                        <div class="flip-box-back">
+                            <img src="bootcamp1.jpeg" alt="Paris" style="width:350px;height:230px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </p>
+    </div>
+    <br>&nbsp<br>&nbsp<br>
+    <div>
+        <h2>Volunteering</h2>
+        <div class="danger">
+            <p><strong>Coding Instructor JS and HTML</strong>
+                <br> QueenB Scholarship 2021 - 2022
+                <br>Instructor at QueenB, an NGO active in increasing women presence in the Israeli technology field through teaching young women (8th grade)</p>
+        </div>
+        <div class="danger">
+            <p><strong>The national task force</strong>
+                <br>national sutden association 2021
+                <br>Providing emotional support to the elderly by talking about their memories</p>
+        </div>
+        <div class="danger">
+            <p><strong>Perach</strong>
+            <br>a National program for social impact 2015- 2021
+            <br>Giving a child personal attention, mentoring CS freshmen and serving as an example</p>
+        </div>
+        <div class="danger">
+            <p><strong>Women Community Center</strong>
+                <br>Masada 2018
+                <br>Supporting and guiding women from the Druze villages of the Golan Heights and providing administrative assistance for the manager</p>
+        </div>
+    </div>
+    <div>
+        <p>
+            <h2>Education</h2>
+            <div class="danger">
+                <p><strong>Tel-Hai College B.Sc - Computer Science</strong></p>
+            </div>
+            <div class="danger">
+                <p><strong>Majdal Shams High School</strong> Majored in Computer Science, Mathematics & Physics</p>
+            </div>
         </p>
     </div>
     <div>
@@ -108,30 +143,13 @@
         <span class="tag-cloud">Hebrew</span>
         <span class="tag-cloud">English</span>
     </div>
-
-    <br><br><br><br>
+    <br>&nbsp<br>&nbsp<br>
+    <img class="welcome" src="welcome.jpeg" alt="welcome" style="width:30%">
+    
+    <br>&nbsp<br>&nbsp<br>
 </body>
 <footer> 
     &copy; 2024 Tharaa Abu Saleh Profile Page
 </footer>
-
-<script>
-    function toggleMenu() {
-        var menu = document.querySelector('.menu');
-        if (menu.classList.contains('hidden-menu')) {
-            menu.classList.remove('hidden-menu');
-        } else {
-            menu.classList.add('hidden-menu');
-        }
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.slider');
-        var instances = M.Slider.init(elems, options);
-    });
-
-    $(document).ready(function(){
-        $('.slider').slider();
-    });
-</script>
+<script src="script.js"></script>
 </html>
